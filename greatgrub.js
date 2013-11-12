@@ -6,15 +6,13 @@
 //
 var x = '&#64;';
 var eml = '&#103;&#114;&#101;&#97;&#116;&#103;&#114;&#117;&#98;' + x + '&#108;&#117;&#115;&#46;&#99;&#111;&#109;';
-var out = '<a class="btn btn-primary btn-lg" href="mailto:' + eml + '?subject=Sign Me Up!">Sign up!</a>';
+var out = '<a href="mailto:' + eml + '?subject=Sign Me Up!"><div class="wide tall"></div></a>';
 $(function(){
-  $('.signup').html(out);
+  $('body').html(out);
 
-  $('.signup').click(function(){
+  $('body').click(function(){
     var link = $(this.children)
-    var href = link.attr('href') +
-      '&body=' +
-      escape($('textarea').val())
+    var href = link.attr('href')
     $(this.children).attr('href', href)
   })
 })

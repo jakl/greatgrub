@@ -1,5 +1,5 @@
 body {
-  background: url("egret.jpg") no-repeat center center fixed;
+  background: url("fulldesign.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 .jumbotron .whitesmoke {
@@ -22,4 +22,7 @@ body {
 }
 .wide {
   width: 100%;
+}
+.tall {
+  height: 100%;
 }
